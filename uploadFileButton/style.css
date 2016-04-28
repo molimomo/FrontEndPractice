@@ -1,0 +1,29 @@
+.inputfile{
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+
+.inputfile + label {
+	width: 256px;
+	height: 256px;
+	font-size: 1.25em;
+	font-weight: 700;
+	color: white;
+	background-color: black;
+	background: url('next.png');
+
+	display: inline-block;
+	cursor: pointer;
+}
+
+.inputfile:focus + label{
+	outline: -webkit-focus-ring-color auto 5px;
+}
+.inputfile:focus + label,
+.inputfile + label:hover {
+	background-color: red;
+}
